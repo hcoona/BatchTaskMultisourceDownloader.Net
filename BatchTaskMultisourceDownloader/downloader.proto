@@ -1,0 +1,52 @@
+﻿syntax = "proto3";
+
+option csharp_namespace = "BatchTaskMultisourceDownloader";
+
+message ManifestInfo {
+  int64 segment_size = 1;
+  int64 fragment_size = 2; // Fragment size must divide segment size
+  map<int64, FileInfo> fileMap = 10;
+  map<int64, SegmentInfo> segmentMap = 11;
+  map<int64, FragmentInfo> fragmentMap = 12;
+}
+
+message FileInfo {
+  int64 key = 1;
+  string local_path = 2;
+  string remote_path = 3;
+  int64 file_size = 4;
+  IntegrityInfo integrity_info = 5;
+  repeated int64 segment_keys = 6;
+}
+
+message IntegrityInfo {
+  string algorithm_name = 1;
+  bytes integrity_hash_value = 2;
+}
+
+message SegmentInfo {
+  int64 key = 1;
+  int64 file_key = 2;
+  int64 offset_in_file = 3;
+  IntegrityInfo integrity_info = 4;
+  repeated int64 fragment_keys = 5;
+}
+
+message FragmentInfo {
+  int64 key = 1;
+  int64 segment_key = 2;
+}
+
+
+message PullRequest {
+  repeated int64 fragment_keys = 1;
+}
+
+message PullResponse {
+  int64 fragment_key = 1;
+  bytes fragment_value = 2;
+}
+
+service DownloaderService {
+  rpc Pull (PullRequest) returns (stream PullResponse) {}
+}

@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BatchTaskMultisourceDownloader", "BatchTaskMultisourceDownloader\BatchTaskMultisourceDownloader.csproj", "{E2ADEBFA-9F2C-410F-8856-C655179710D9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BatchTaskMultisourceDownloader.ConsoleApp", "BatchTaskMultisourceDownloader.ConsoleApp\BatchTaskMultisourceDownloader.ConsoleApp.csproj", "{9B92EF23-1920-4D7E-AE3E-C653ADFFAAD5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BatchTaskMultisourceDownloader.ManifestGenerator", "BatchTaskMultisourceDownloader.ManifestGenerator\BatchTaskMultisourceDownloader.ManifestGenerator.csproj", "{07F4FE8A-1B38-4506-B3C5-759FEAC0ECD6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CFA5B990-4386-45BF-BA6B-1EDE4A17938B}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitignore = .gitignore
+		.gitmodules = .gitmodules
+		.travis.yml = .travis.yml
+		appveyor.yml = appveyor.yml
+		common.props = common.props
+		Directory.Build.props = Directory.Build.props
+		LICENSE.txt = LICENSE.txt
+		README.md = README.md
+		version.json = version.json
+		version.props = version.props
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E2ADEBFA-9F2C-410F-8856-C655179710D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2ADEBFA-9F2C-410F-8856-C655179710D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2ADEBFA-9F2C-410F-8856-C655179710D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2ADEBFA-9F2C-410F-8856-C655179710D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B92EF23-1920-4D7E-AE3E-C653ADFFAAD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B92EF23-1920-4D7E-AE3E-C653ADFFAAD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B92EF23-1920-4D7E-AE3E-C653ADFFAAD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B92EF23-1920-4D7E-AE3E-C653ADFFAAD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07F4FE8A-1B38-4506-B3C5-759FEAC0ECD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07F4FE8A-1B38-4506-B3C5-759FEAC0ECD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07F4FE8A-1B38-4506-B3C5-759FEAC0ECD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07F4FE8A-1B38-4506-B3C5-759FEAC0ECD6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3AB9A20B-E22D-4222-AC2D-0DC39AFE9D7A}
+	EndGlobalSection
+EndGlobal

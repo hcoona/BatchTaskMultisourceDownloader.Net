@@ -1,0 +1,3 @@
+# Batch-task Multi-source Downloader #
+
+This is a multi-source download designed for batch distributed jobs. For example a Hadoop DistributedShell like job would launch multiple executable applications almost in same time. These applications could like to download same content from source. This downloading procedure could bring a great pressure to the source location, which could be mitigated by P2P technology. This downloader would break files into segments for downloading from the source location, break segments into fragments for P2P sharing. The downloader would fetch contents both from source locations & peers.

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project>
+
+  <PropertyGroup>
+    <Authors>Shuai Zhang</Authors>
+    <Company>Shuai Zhang</Company>
+    <Copyright>Copyright 2017 Shuai Zhang under GPLv3</Copyright>
+    <Description>This is a multi-source download designed for batch distributed jobs. See project site for further details.</Description>
+    <PackageLicenseUrl>https://www.gnu.org/licenses/gpl-3.0-standalone.html</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/hcoona/BatchTaskMultisourceDownloader.Net</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/hcoona/BatchTaskMultisourceDownloader.Net</RepositoryUrl>
+    <RepositoryType>Git</RepositoryType>
+    <PackageTags>multisource downloader p2p</PackageTags>
+    <PackageReleaseNotes>$(Description)</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Nerdbank.GitVersioning" Version="2.1.23" PrivateAssets="All" />
+  </ItemGroup>
+
+</Project>
